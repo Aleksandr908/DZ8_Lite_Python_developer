@@ -32,7 +32,7 @@ if __name__ == "__main__":
     customer2.add_order(order2)
 
     # Применение скидок
-    discount = Discount("Seasonal Discount", 10)
+    discount = Discount("Сезонная скидка", 10)
     total_price_order1 = sum(product.price for product in order1.products)
     discounted_price_order1 = Discount.apply_discount(total_price_order1, discount.discount_percent)
 
@@ -40,8 +40,8 @@ if __name__ == "__main__":
 
     # Вывод информации о клиентах, заказах и продуктах
     print(customer1)
-    print(customer2)
     print(order1)
+    print(customer2)
     print(order2)
 
     # Подсчет общего количества заказов и общей суммы всех заказов
